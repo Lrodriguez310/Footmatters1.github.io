@@ -51,14 +51,14 @@ h6,
   outline: 2px solid #101c36;
 }
 
-button:hover {
+button:not(.accordion-button):hover {
   color: #ffffff;
   transform: scale(1.1);
   outline: 2px solid #274685;
   box-shadow: 4px 5px 17px -4px #274685;
 }
 
-button::before {
+button:not(.accordion-button)::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -71,7 +71,7 @@ button::before {
   transition: width 1000ms;
 }
 
-button:hover::before {
+button:not(.accordion-button):hover::before {
   width: 250%;
 }
 
